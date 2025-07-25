@@ -54,11 +54,13 @@ export const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="empty-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I'm a skilled website developer with experience in TypeScript and
-          Javascript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
+          I'm a Full Stack Developer with experience working in European and US startups. I have expertise in React.js, Next.js, PHP and Node.js. 
+          I specialize in creating scalable web applications and integrating blockchain
+          technology using Solidity and Web3. My experience includes working with
+          Firebase, Supabase, PostgreSQL, and RESTful APIs to deliver efficient,
+          user-friendly solutions. I thrive in collaborative environments and adapt
+          quickly to new challenges, making me a valuable asset for bringing innovative
+          projects to life.
         </motion.p>
 
         {/* Service Card */}

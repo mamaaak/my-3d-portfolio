@@ -2,8 +2,8 @@
 // don't remove anything if not sure
 
 import BallCanvas from "./ball";
-import ComputersCanvas from "./computers";
+import DragonCanvas from "./dragon";
 import EarthCanvas from "./earth";
 import StarsCanvas from "./stars";
 
-export { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas };
+export { EarthCanvas, BallCanvas, DragonCanvas, StarsCanvas };

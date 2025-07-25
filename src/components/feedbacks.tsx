@@ -77,7 +77,10 @@ export const Feedbacks = () => {
 
         {/* Feedback Card */}
         <div
-          className={cn(styles.paddingX, "-mt-20 pb-14 flex flex-wrap gap-7")}
+          className={cn(
+            styles.paddingX, 
+            "-mt-20 pb-14 flex flex-wrap justify-center gap-10 max-w-5xl mx-auto"
+          )}
         >
           {TESTIMONIALS.map((testimonial, i) => (
             <FeedbackCard key={testimonial.name} index={i} {...testimonial} />

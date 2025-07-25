@@ -18,17 +18,9 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  threejs,
-  project1,
-  project2,
-  project3,
-  project4,
-  project5,
-  project6,
+  globe,
+  mxsGames,
+  verias,
   user1,
   user2,
   user3,
@@ -36,6 +28,8 @@ import {
   linkedin,
   twitter,
   github,
+  threejs,
+  meta,
 } from "../assets";
 
 // Navbar Links
@@ -46,19 +40,14 @@ export const NAV_LINKS = [
     link: null,
   },
   {
-    id: "work",
-    title: "Work",
-    link: null,
-  },
-  {
     id: "contact",
     title: "Contact",
     link: null,
   },
   {
-    id: "source-code",
-    title: "Source Code",
-    link: "http://www.github.com/sanidhyy/3d-portfolio/",
+    id: "resume",
+    title: "Resume",
+    link: null,
   },
 ] as const;
 
@@ -69,7 +58,7 @@ export const SERVICES = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Front End Developer",
     icon: mobile,
   },
   {
@@ -77,13 +66,37 @@ export const SERVICES = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Full Stack Developer",
     icon: creator,
   },
 ] as const;
 
 // Technologies
 export const TECHNOLOGIES = [
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Next JS",
+    icon: javascript,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -93,103 +106,68 @@ export const TECHNOLOGIES = [
     icon: css,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
+    name: "Solidity",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
+    name: "Firebase",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "PostgreSQL",
+    icon: docker,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Web3",
+    icon: threejs,
   },
 ] as const;
 
 // Experiences
 export const EXPERIENCES = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full Stack Developer",
+    company_name: "MetaXSeed Games, London, United Kingdom",
+    icon: mxsGames,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "May 2024 - July 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Architected and deployed scalable web applications using React.js, Next.js, and Node.js, delivering exceptional user experiences.",
+      "Implemented serverless solutions with Firebase (NoSQL) and Supabase (PostgreSQL), optimizing backend performance and enabling real-time data synchronization.",
+      "Developed and maintained RESTful APIs, ensuring seamless data exchange and integration with frontend applications.",
+      "Spearheaded the development and deployment of NFT smart contracts using Solidity and Hardhat, integrating blockchain technology into web applications.",
+      "Enhanced decentralized application (dApp) functionality with Web3 operations to manage NFTs and metadata reliably.",
+      "Utilized Google Cloud, Jira, and Confluence to streamline project management and ensure timely delivery in an Agile environment.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Full Stack Developer",
+    company_name: "Globe Telecom, Taguig",
+    icon: globe,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "May 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Collaborated with cross-functional teams to ensure seamless integration of Laravel-based backend systems with frontend interfaces.",
+      "Maintained and optimized Laravel-based websites, focusing on performance, scalability, and user experience.",
+      "Identified and resolved bugs in Laravel controllers, ensuring robust application logic and smooth data flow between backend and frontend.",
+      "Conducted thorough debugging and testing of Laravel routes, middleware, and services to improve system reliability and performance.",
+      "Worked closely with frontend developers to align API endpoints with UI requirements, streamlining data exchange and reducing integration issues.",
+      "Implemented and maintained Laravel migrations, models, and relationships to support efficient database operations and website functionality.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Front End Developer",
+    company_name: "Verias, Delray Beach, Florida, USA",
+    icon: verias,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "December 2024 - April 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and implemented new pages using Ext JS, enhancing user interfaces and improving application functionality for a seamless user experience.",
+      "Migrated legacy Ext JS frontend sections to a modern React structure, optimizing code maintainability and performance.",
+      "Integrated RESTful APIs into the frontend, enabling dynamic data retrieval and display to support real-time application features.",
+      "Collaborated with backend teams to ensure seamless API integration, reducing data fetching latency and improving user responsiveness.",
+      "Conducted thorough testing and debugging of frontend components, ensuring cross-browser compatibility and high-quality deliverables.",
+      "Leveraged JavaScript and React best practices to streamline development workflows, contributing to faster project delivery.",
     ],
   },
 ] as const;
@@ -198,185 +176,32 @@ export const EXPERIENCES = [
 export const TESTIMONIALS = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "He is one of the most enthusiastic young software developers I have ever met. His learning curve is incredibly steep, and he is always open to further growth. I feel fortunate to have the opportunity to share knowledge with him.",
+    name: "Efe Toker",
+    designation: "Senior Software Engineer",
+    company: "MXS Games",
     image: user1,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "He is a dedicated and industrious professional who excels at tackling complex challenges. Leveraging diverse resources, he consistently devises innovative solutions to ensure successful task completion.",
+    name: "Isaias Glemao Jr.",
+    company: "MXS Games",
+    designation: "Full Stack Developer",
     image: user2,
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: user3,
-  },
-] as const;
-
-// Projects
-export const PROJECTS = [
-  {
-    name: "Disney+ Clone",
-    description:
-      "Disney+ is one of the biggest streaming platforms used by millions of people world-wide and allows us to stream high quality content in 4k and various other formats",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project1,
-    source_code_link: "https://github.com/sanidhyy/disney-clone",
-    live_site_link: "https://clonedisneyplus.web.app/",
-  },
-  {
-    name: "Golds Gym",
-    description:
-      "Web application that enables users to search for fitness exercises, effective personalized positions, and recommends new exercises based on their personal preferences.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rapidapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project2,
-    source_code_link: "https://github.com/sanidhyy/fitness-app",
-    live_site_link: "https://fitness-gym-react.netlify.app/",
-  },
-  {
-    name: "Shoppy",
-    description:
-      "The most personalised admin dashboard web application that allows enables users to choose customized themes and dark mode with different pages and variety of charts.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "syncfusion",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project3,
-    source_code_link: "https://github.com/sanidhyy/admin-dashboard",
-    live_site_link: "https://shoppy-dashboard-react.netlify.app/",
-  },
-  {
-    name: "TikTok Clone",
-    description:
-      "A Next JS Web Application that enables users to upload videos of any length and size, create accounts and connect with other people just like any other social media.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project4,
-    source_code_link: "https://github.com/sanidhyy/tiktok-clone",
-    live_site_link: "https://tiktok-clone-react.vercel.app/",
-  },
-  {
-    name: "Cryptoverse",
-    description:
-      "Best Cryptocurrency web application that allows users to view price, market cap and daily change in realtime for almost every cryptocurrency in the world.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rapidapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project5,
-    source_code_link: "https://github.com/sanidhyy/crypto-app",
-    live_site_link: "https://reactjscryptoapp.netlify.app/",
-  },
-  {
-    name: "Travel Advisor",
-    description:
-      "Web application that enables you to view your nearby restaurants, hotels and attractions which can be sorted by ratings, price and much more.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rapidapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "material-ui",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project6,
-    source_code_link: "https://github.com/sanidhyy/travel-advisor",
-    live_site_link: "https://travel-advisor-reactjs.netlify.app/",
   },
 ] as const;
 
 export const SOCIALS = [
   {
-    name: "YouTube",
-    icon: youtube,
-    link: "https://www.youtube.com/@OPGAMER.",
-  },
-  {
     name: "Linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/in/sanidhyy",
-  },
-  {
-    name: "Twitter",
-    icon: twitter,
-    link: "https://twitter.com/TechnicalShubam",
+    link: "https://www.linkedin.com/in/mark-angel-rapelo-08064b2a5/",
   },
   {
     name: "GitHub",
     icon: github,
-    link: "https://github.com/sanidhyy",
+    link: "https://github.com/mamaaak",
   },
 ] as const;
+
