@@ -28,6 +28,10 @@ export const Hero = () => {
           <p className={cn(styles.heroSubText, "mt-2 text-white-100")}>
             Full Stack Developer <br className="sm:block hidden" />
           </p>
+          {/* Add this new paragraph */}
+          <p className="mt-4 text-secondary text-[14px]">
+            Hint: You can drag the dragon to rotate it!
+          </p>
         </div>
       </div>
 
