@@ -18,7 +18,6 @@ import {
   git,
   figma,
   docker,
-  globe,
   mxsGames,
   verias,
   user1,
@@ -30,6 +29,7 @@ import {
   github,
   threejs,
   meta,
+  agentarc,
 } from "../assets";
 
 // Navbar Links
@@ -127,6 +127,20 @@ export const TECHNOLOGIES = [
 export const EXPERIENCES = [
   {
     title: "Full Stack Developer",
+    company_name: "AgentArc, Singapore (Remote)",
+    icon: agentarc,
+    iconBg: "#000000",
+    date: "July 2025 - Present",
+    points: [
+      "Engineered a secure, high-performance web application, writing robust backend logic and integrating it with a Next.js frontend to enable seamless user authentication and secure transaction handling.",
+      "Developed high-performance administrative dashboards, managing the end-to-end flow from Supabase (PostgreSQL) backend schema design to frontend API integration.",
+      "Orchestrated production deployments on Digital Ocean, configuring droplets and managing environment variables to ensure application stability.",
+      "Led technical integrations between Webflow marketing sites and custom web applications, configuring domain settings and ensuring seamless user navigation across platforms.",
+      "Optimized serverless backend performance using Supabase, implementing real-time data synchronization and efficient RESTful API endpoints for client-side consumption.",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
     company_name: "MetaXSeed Games, London, United Kingdom",
     icon: mxsGames,
     iconBg: "#E6DEDD",
@@ -138,21 +152,6 @@ export const EXPERIENCES = [
       "Spearheaded the development and deployment of NFT smart contracts using Solidity and Hardhat, integrating blockchain technology into web applications.",
       "Enhanced decentralized application (dApp) functionality with Web3 operations to manage NFTs and metadata reliably.",
       "Utilized Google Cloud, Jira, and Confluence to streamline project management and ensure timely delivery in an Agile environment.",
-    ],
-  },
-  {
-    title: "Full Stack Developer",
-    company_name: "Globe Telecom, Taguig",
-    icon: globe,
-    iconBg: "#383E56",
-    date: "May 2024 - Present",
-    points: [
-      "Collaborated with cross-functional teams to ensure seamless integration of Laravel-based backend systems with frontend interfaces.",
-      "Maintained and optimized Laravel-based websites, focusing on performance, scalability, and user experience.",
-      "Identified and resolved bugs in Laravel controllers, ensuring robust application logic and smooth data flow between backend and frontend.",
-      "Conducted thorough debugging and testing of Laravel routes, middleware, and services to improve system reliability and performance.",
-      "Worked closely with frontend developers to align API endpoints with UI requirements, streamlining data exchange and reducing integration issues.",
-      "Implemented and maintained Laravel migrations, models, and relationships to support efficient database operations and website functionality.",
     ],
   },
   {

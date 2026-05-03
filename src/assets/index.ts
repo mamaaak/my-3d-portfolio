@@ -26,7 +26,7 @@ import typescript from "./tech/typescript.png";
 
 import meta from "./company/meta.png";
 import mxsGames from "./company/mxs-games.jpeg";
-import globe from "./company/Globe.png";
+import agentarc from "./company/agentarc.png";
 import verias from "./company/verias.jpeg";
 
 import user1 from "./testimonials/user1.jpg";
@@ -66,7 +66,7 @@ export {
   threejs,
   meta,
   mxsGames,
-  globe,
+  agentarc,
   verias,
   user1,
   user2,
