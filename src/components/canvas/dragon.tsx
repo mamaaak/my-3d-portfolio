@@ -84,7 +84,7 @@ const DragonCanvas = () => {
 
   // Check if device is Mobile
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia("(max-width: 640px)");
 
     setIsMobile(mediaQuery.matches);
 

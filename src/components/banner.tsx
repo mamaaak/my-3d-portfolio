@@ -34,11 +34,11 @@ const Banner = ({ hide, setHide }: BannerProps) => {
       tabIndex={-1}
       className={`${
         hide ? "hidden" : "block"
-      } absolute h-20 top-0 left-0 z-50 flex justify-between w-full p-4 bg-primary shadow-md opacity-[0.98]`}
+      } absolute left-0 top-0 z-50 flex min-h-20 w-full flex-wrap items-center justify-between gap-3 bg-primary p-3 shadow-md opacity-[0.98] sm:p-4`}
     >
-      <div className="flex items-center mx-auto">
-        <p className="flex items-center text-sm font-normal text-gray-500 ">
-          <span className="inline-flex p-1 mr-3 bg-gray-200 rounded-full ">
+      <div className="mx-auto flex min-w-0 flex-1 items-center pr-2 sm:pr-0">
+        <p className="flex min-w-0 items-center text-xs font-normal text-gray-500 sm:text-sm">
+          <span className="mr-2 inline-flex shrink-0 rounded-full bg-gray-200 p-1 sm:mr-3">
             <img
               src={bulb}
               alt="bulb"
@@ -48,12 +48,12 @@ const Banner = ({ hide, setHide }: BannerProps) => {
             />
             <span className="sr-only">Light bulb</span>
           </span>
-          <span>
+          <span className="min-w-0 leading-snug">
             Welcome to my 3D portfolio built with React, Three.js and TypeScript!
           </span>
         </p>
       </div>
-      <div className="flex items-center">
+      <div className="ml-auto flex shrink-0 items-center">
         <button
           data-dismiss-target="#sticky-banner"
           onClick={handleBannerClose}

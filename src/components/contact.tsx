@@ -123,10 +123,10 @@ export const Contact = () => {
 
   return (
     <SectionWrapper idName="contact">
-      <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+      <div className="flex flex-col-reverse gap-8 overflow-hidden xl:mt-12 xl:flex-row xl:gap-10">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+          className="min-w-0 flex-[0.75] rounded-2xl bg-black-100 p-5 sm:p-8"
         >
           {/* Title */}
           <p className={styles.sectionSubText}>Get in touch</p>
@@ -136,7 +136,7 @@ export const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-8"
+            className="mt-8 flex flex-col gap-6 sm:mt-12 sm:gap-8"
           >
             {/* Name */}
             <label htmlFor="name" className="flex flex-col">
@@ -221,7 +221,7 @@ export const Contact = () => {
         {/* Earth Model */}
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+          className="h-[280px] min-h-0 w-full min-w-0 md:h-[550px] xl:h-auto xl:flex-1"
         >
           <EarthCanvas />
         </motion.div>

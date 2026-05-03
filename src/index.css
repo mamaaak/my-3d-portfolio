@@ -126,6 +126,20 @@
   transform: translateZ(0);
 }
 
+/* Vertical timeline (react-vertical-timeline-component): narrow viewports */
+@media (max-width: 639px) {
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    float: none !important;
+    display: block !important;
+    width: 100% !important;
+    padding: 0 0 0.625rem 0 !important;
+  }
+
+  .vertical-timeline-element-content {
+    padding: 0.875rem !important;
+  }
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {

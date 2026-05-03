@@ -7,39 +7,40 @@ import { cn } from "../utils/lib";
 // Hero
 export const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative mx-auto h-screen min-h-[100dvh] w-full overflow-hidden">
+      {/* 3D layer — full bleed; GL background stays transparent over copy */}
+      <div className="pointer-events-none absolute inset-0 z-0 h-full w-full [&_canvas]:pointer-events-auto">
+        <DragonCanvas />
+      </div>
+
       <div
         className={cn(
           styles.paddingX,
-          "absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5",
+          "relative z-10 mx-auto flex max-w-7xl flex-row items-start gap-3 pt-24 xs:gap-4 xs:pt-28 sm:gap-5 sm:pt-[120px]",
         )}
       >
         {/* Title */}
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+        <div className="mt-2 flex shrink-0 flex-col items-center justify-center sm:mt-5">
+          <div className="h-4 w-4 rounded-full bg-[#915eff] sm:h-5 sm:w-5" />
+          <div className="violet-gradient h-32 w-1 sm:h-80" />
         </div>
 
         {/* About Me */}
-        <div>
+        <div className="min-w-0 max-w-full flex-1 pr-1 sm:pr-0">
           <h1 className={cn(styles.heroHeadText, "text-white")}>
             Hi, I'm <span className="text-[#915eff]">Mark Rapelo</span>
           </h1>
           <p className={cn(styles.heroSubText, "mt-2 text-white-100")}>
             Full Stack Developer <br className="sm:block hidden" />
           </p>
-          {/* Add this new paragraph */}
-          <p className="mt-4 text-secondary text-[14px]">
+          <p className="mt-3 text-secondary text-xs sm:mt-4 sm:text-[14px]">
             Hint: You can drag the dragon to rotate it!
           </p>
         </div>
       </div>
 
-      {/* Dragon Model */}
-      <DragonCanvas />
-
       {/* Scroll to about section */}
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute bottom-24 z-20 flex w-full items-center justify-center xs:bottom-10 sm:bottom-10">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

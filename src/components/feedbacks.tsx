@@ -26,14 +26,16 @@ const FeedbackCard = ({
 }: FeedbackCardProps) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
+    className="w-full max-w-full rounded-3xl bg-black-200 p-6 sm:p-10 xs:max-w-[320px]"
   >
     {/* Quote " */}
-    <p className="text-white font-black text-[48px]">"</p>
+    <p className="text-3xl font-black text-white sm:text-[48px]">"</p>
 
     <div className="mt-1">
       {/* Testimonial */}
-      <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
+      <p className="text-[15px] tracking-wide text-white sm:text-[18px]">
+        {testimonial}
+      </p>
 
       <div className="mt-7 flex justify-between items-center gap-1">
         <div className="flex-1 flex flex-col">
@@ -65,7 +67,7 @@ export const Feedbacks = () => {
         <div
           className={cn(
             styles.padding,
-            "bg-tertiary rounded-2xl min-h-[300px]"
+            "min-h-[220px] rounded-2xl bg-tertiary sm:min-h-[300px]",
           )}
         >
           {/* Title */}
@@ -78,8 +80,8 @@ export const Feedbacks = () => {
         {/* Feedback Card */}
         <div
           className={cn(
-            styles.paddingX, 
-            "-mt-20 pb-14 flex flex-wrap justify-center gap-10 max-w-5xl mx-auto"
+            styles.paddingX,
+            "mx-auto -mt-12 flex max-w-5xl flex-wrap justify-center gap-6 pb-10 sm:-mt-20 sm:gap-10 sm:pb-14",
           )}
         >
           {TESTIMONIALS.map((testimonial, i) => (
