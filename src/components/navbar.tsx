@@ -5,7 +5,6 @@ import { menu, close } from "../assets";
 import { NAV_LINKS } from "../constants";
 import { styles } from "../styles";
 import { cn } from "../utils/lib";
-import { resume } from "../assets";
 
 type NavbarProps = {
   hide: boolean;
@@ -31,17 +30,6 @@ export const Navbar = ({ hide }: NavbarProps) => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Handle resume download
-  const handleResumeClick = () => {
-    // Use the imported resume file
-    const link = document.createElement('a');
-    link.href = resume;
-    link.download = 'Mark_Rapelo_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <nav
@@ -77,9 +65,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
                 "hover:text-white text-[18px] font-medium cursor-pointer"
               )}
               onClick={() => {
-                if (link.id === "resume") {
-                  handleResumeClick();
-                } else if (!link.link) {
+                if (!link.link) {
                   setActive(link.title);
                 }
               }}
@@ -88,8 +74,6 @@ export const Navbar = ({ hide }: NavbarProps) => {
                 <a href={link.link} target="_blank" rel="noreferrer noopener">
                   {link.title}
                 </a>
-              ) : link.id === "resume" ? (
-                <span>{link.title}</span>
               ) : (
                 <a href={`#${link.id}`}>{link.title}</a>
               )}
@@ -122,10 +106,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
                     "font-poppins font-medium cursor-pointer text-[16px]"
                   )}
                   onClick={() => {
-                    if (link.id === "resume") {
-                      handleResumeClick();
-                      setToggle(!toggle);
-                    } else if (!link.link) {
+                    if (!link.link) {
                       setToggle(!toggle);
                       setActive(link.title);
                     }
@@ -136,11 +117,10 @@ export const Navbar = ({ hide }: NavbarProps) => {
                       href={link.link}
                       target="_blank"
                       rel="noreferrer noopener"
+                      onClick={() => setToggle(false)}
                     >
                       {link.title}
                     </a>
-                  ) : link.id === "resume" ? (
-                    <span>{link.title}</span>
                   ) : (
                     <a href={`#${link.id}`}>{link.title}</a>
                   )}

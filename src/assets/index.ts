@@ -38,10 +38,6 @@ import linkedin from "./socials/linkedin.svg";
 import twitter from "./socials/twitter.svg";
 import youtube from "./socials/youtube.svg";
 
-// Import resume
-import resume from './resume.pdf';
-
-
 export {
   backend,
   bulb,
@@ -75,5 +71,4 @@ export {
   youtube,
   linkedin,
   twitter,
-  resume,
 };

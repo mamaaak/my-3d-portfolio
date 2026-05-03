@@ -47,7 +47,7 @@ export const NAV_LINKS = [
   {
     id: "resume",
     title: "Resume",
-    link: null,
+    link: "https://www.dropbox.com/scl/fi/pcsx8yhk2edtwu3y6iixf/MARK-ANGEL-RAPELO-RESUME-.docx.pdf?rlkey=6z97hib8m13iiriz79xmjcix0&st=2sd85r0f&dl=0",
   },
 ] as const;
 
